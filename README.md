@@ -1,2 +1,2 @@
 # perryliu.co.uk
-Perry's personal CV/ portfolio site
+Personal CV/ portfolio site
