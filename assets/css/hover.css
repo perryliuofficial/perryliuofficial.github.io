@@ -1,0 +1,10 @@
+.card .card-img-top {
+    transition:all 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top,
+.card:focus .card-img-top {
+  transform: scale(1.02);
+/*  opacity:0.5;*/
+  transition:all 0.3s ease-in-out;
+}
