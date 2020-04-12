@@ -21,21 +21,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/77202afacb.js" crossorigin="anonymous"></script>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156180218-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156180218-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-156180218-1', { 'anonymize_ip': true });
-</script>
+      gtag('config', 'UA-156180218-1', { 'anonymize_ip': true });
+    </script>
 
       
   </head>
-  <body>
-      <nav class="navbar px-5 navbar-expand-sm fixed-top navbar-dark bg-dark shadow">
-  <a class="navbar-brand" href="/">Perry Liu</a>
+  <body class="ppp-bg-grid">
+      <nav class="navbar px-5 navbar-expand-sm fixed-top navbar-dark" style="background-color:rgba(0,0,0,0.85)">
+  <a class="navbar-brand" href="/"><img src="assets/img/perry.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""> Perry Liu</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -45,7 +45,7 @@
       <!-- Right Nav -->
       <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-        <a class="nav-link" href="/assets/Perry%20CV%202020.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a>
+        <a class="nav-link" href="/assets/perry%20cv.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/perryliuofficial?tab=repositories" target=”_blank”><i class="fab fa-github"></i> Repo</a>
@@ -62,7 +62,7 @@
   
 
 <!-- Page Content -->
-<section class="py-5 px-1" id="About">
+<section class="pt-5 px-1" id="About">
     <h1 class="text-primary text-center pt-5">I am a <strong>Digital Marketer</strong></h1>
 <h6 class="text-dark text-center lead"><strong>Social Media &amp; Communications:</strong> Dotmailer, Mailchimp, Twitter, Facebook, etc</h6>
     
@@ -75,179 +75,138 @@
 Internal &amp; External</h6>
 </section>
       
-<section class="pb-5">
-<div class="container">
-  <div class="row mx-0">
-    <div class="col-sm-12 mb-3">
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by company or year...">
+<section class="py-5 container">
+<div class="w-100 px-0">
+    <div class="mb-3">
+      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by company, position or year...">
     </div>
       
-</div>
 
-<div class="row mx-0" id="myItems">
-<div class="col-sm-12 mt-3">
+<div id="myItems">
 <!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="card mb-3 shadow-lg">
-<div class="row no-gutters mx-0">
-<div class="col-md-4 d-flex align-items-center justify-content-center">
-<h1 class="text-center text-primary">Internal &amp; External Communications</h1>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-    <h5 class="card-title"><strong>UoE Information Services Group</strong> <span class="lead text-muted">2018-2018</span><span class="d-none">Edinburgh</span></h5>
-<style>
-#moreUOE {display: none;}
-#moreUOE2 {display: none;}
-</style>
-<span><strong>Social Media Management:</strong> Created consistent branding for Twitter account with new<span id="dotsUOE">...</span><span id="moreUOE"> content formats (edited videos, gifs). Improved content accessibility by introducing pipeline for image alt text and improving colour contrast. Filmed, edited and transcribed numerous educational videos. Moved operations over to Tweetdeck for post scheduling and multi-account management.</span></span> 
-<br /> 
-<span><strong>Social Media Analytics:</strong> Collated historic data to identify optimal posting times, frequency<span id="dotsUOE2">...</span><span id="moreUOE2"> and content type. Created tailored content to target existing followers with the biggest external influence, in order to grow audience size.</span></span>
-<br />
-<script>
-function myFunctionUOE() {
-var dots = document.getElementById("dotsUOE");
-var moreText = document.getElementById("moreUOE");
-var btnText = document.getElementById("myBtnUOE");
-if (dots.style.display === "none") {
-dots.style.display = "inline";
-btnText.innerHTML = "Read more"; 
-moreText.style.display = "none";
-} else {
-dots.style.display = "none";
-btnText.innerHTML = "Read less"; 
-moreText.style.display = "inline";
-}
-//additional shizzle2
-var dots = document.getElementById("dotsUOE2");
-var moreText = document.getElementById("moreUOE2");
-if (dots.style.display === "none") {
-dots.style.display = "inline";
-moreText.style.display = "none";
-} else {
-dots.style.display = "none";
-moreText.style.display = "inline";
-}
-
-}
-</script>
-<button class="btn btn-outline-primary btn-sm mt-3" onclick="myFunctionUOE()" id="myBtnUOE" type="button">Read More</button>
-
-</div>
-</div>
-</div>
-</div>
-
-
-<!--/////////////////////////////////////////////////////////////////////////////-->
-
-      
-   
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="card mb-3 shadow-lg">
-<div class="row no-gutters mx-0">
-<div class="col-md-4 d-flex align-items-center justify-content-center">
-<h1 class="text-center text-primary">National Support Team</h1>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-    <h5 class="card-title"><strong>AIESEC UK</strong> <span class="lead text-muted">2017-2018</span></h5>
-<style>
-#moreAIESEC {display: none;}
-#moreAIESEC2 {display: none;}
-#moreAIESEC3 {display: none;}
-</style>
-<span><strong>Digital Adverts:</strong> Supported 20 branches with digital adverts campaigns, through analytics<span id="dotsAIESEC">...</span><span id="moreAIESEC"> workshops, ROI budgeting sessions and educational downscaling.</span></span> 
-<br /> 
-<span><strong>Social Media Chatbot:</strong> Trialed Facebook page chatbot implementation (via Chatfuel)<span id="dotsAIESEC2">...</span><span id="moreAIESEC2"> in collaboration with France HQ, in order to improve response times and customer experience.</span></span>
-<br />
-
-<script>
-function myFunctionAIESEC() {
-var dots = document.getElementById("dotsAIESEC");
-var moreText = document.getElementById("moreAIESEC");
-var btnText = document.getElementById("myBtnAIESEC");
-if (dots.style.display === "none") {
-dots.style.display = "inline";
-btnText.innerHTML = "Read more"; 
-moreText.style.display = "none";
-} else {
-dots.style.display = "none";
-btnText.innerHTML = "Read less"; 
-moreText.style.display = "inline";
-}
-//additional shizzle2
-var dots = document.getElementById("dotsAIESEC2");
-var moreText = document.getElementById("moreAIESEC2");
-if (dots.style.display === "none") {
-dots.style.display = "inline";
-moreText.style.display = "none";
-} else {
-dots.style.display = "none";
-moreText.style.display = "inline";
-}
-
-}
-</script>
-<button class="btn btn-outline-primary btn-sm mt-3" onclick="myFunctionAIESEC()" id="myBtnAIESEC" type="button">Read More</button>
-
-</div>
-</div>
-</div>
-</div>
-
-
-<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+        <div class="card-header">
+            <h3 class="card-title text-center">Information Services Communications</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">UoE Information Services Group, Edinburgh | Jun 2018 - Aug 2018</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">university of edinburgh uoe isg information services group edinburgh 2018</h5>
+          
+          <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#ISG1" role="tab" aria-controls="Social Media Management" aria-selected="true">Social Media Management</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#ISG2" role="tab" aria-controls="Social Media Analytics" aria-selected="false">Social Media Analytics</a>
+            </li>
+          </ul>
+        </div>
     
+        <div class="card-body">   
+           <div class="tab-content">
+            <div class="tab-pane active" id="ISG1" role="tabpanel" aria-labelledby="Social Media Management">
+              <p class="card-text">Created consistent branding for Twitter account and introduced new content types. Designed new guidelines for improved content accessibility. Altered pipeline to enable post scheduling and multi-account management.</p>
+            </div>
+             
+            <div class="tab-pane" id="ISG2" role="tabpanel" aria-labelledby="Social Media Analytics">  
+              <p class="card-text">Collated historic data to identify optimal posting times, frequency and content type. Created tailored content to target existing followers with the biggest external influence, in order to grow audience size.</p>
+            </div>
+             
+          </div>
+        </div>
+      </div>
 <!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="card mb-3 shadow-lg">
-<div class="row no-gutters mx-0">
-<div class="col-md-4 d-flex align-items-center justify-content-center">
-<h1 class="text-center text-primary">Sales Representative</h1>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-    <h5 class="card-title"><strong>SalesVu</strong> <span class="lead text-muted">2017-2017</span></h5>
-
-<span><strong>Field Sales:</strong> Created sales forecasts and daily KPIs.</span> 
-<br /> 
-<span><strong>App Beta Test:</strong> Beta tested in-development apps to identify bugs and general rooms for improvement.</span> 
-<br /> 
-
-
-
-</div>
-</div>
-</div>
-</div>
-
-
 <!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+        <div class="card-header">
+            <h3 class="card-title text-center">National Support Team</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">AIESEC UK, Edinburgh | Aug 2017 - Jul 2018</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">national support team aiesec uk edinburgh 2017 2018</h5>
+          
+          <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#AI1" role="tab" aria-controls="Digital Adverts" aria-selected="true">Digital Adverts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#AI2" role="tab" aria-controls="Social Media Chatbot" aria-selected="false">Social Media Chatbot</a>
+            </li>
 
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="card mb-3 shadow-lg">
-<div class="row no-gutters mx-0">
-<div class="col-md-4 d-flex align-items-center justify-content-center">
-<h1 class="text-center text-primary">Secretary</h1>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-    <h5 class="card-title"><strong>Helping Hand Cleaning Edinburgh</strong> <span class="lead text-muted">2016-2017</span></h5>
-
-<span><strong>Social Media Management:</strong> Managed company Facebook account.</span> 
-<br /> 
-
-
-
-</div>
-</div>
-</div>
-</div>
-
-
-<!--/////////////////////////////////////////////////////////////////////////////--> 
+          </ul>
+        </div>
     
+        <div class="card-body">   
+           <div class="tab-content">
+            <div class="tab-pane active" id="AI1" role="tabpanel" aria-labelledby="Digital Adverts">
+              <p class="card-text">Supported 20 branches with digital adverts campaigns, through analytics workshops, ROI budgeting sessions and educational downscaling.</p>
+            </div>
+             
+            <div class="tab-pane" id="AI2" role="tabpanel" aria-labelledby="Social Media Chatbot">  
+              <p class="card-text">Trialled Facebook page chatbot implementation (via Chatfuel) in collaboration with France HQ, in order to improve response times and customer experience.</p>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+        <div class="card-header">
+            <h3 class="card-title text-center">Sales Representative</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">SalesVu, Austin TX | May 2017 - Jul 2017</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">salesvu sales austin texas 2017 2017</h5>
+          
+          <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#SV1" role="tab" aria-controls="Field Sales" aria-selected="true">Field Sales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#SV2" role="tab" aria-controls="App Beta Test" aria-selected="false">App Beta Test</a>
+            </li>
+
+          </ul>
+        </div>
+    
+        <div class="card-body">   
+           <div class="tab-content">
+            <div class="tab-pane active" id="SV1" role="tabpanel" aria-labelledby="Field Sales">
+              <p class="card-text">Created sales forecasts and daily KPIs.</p>
+            </div>
+             
+            <div class="tab-pane" id="SV2" role="tabpanel" aria-labelledby="App Beta Test">  
+              <p class="card-text">Beta tested in-development apps to identify bugs and general rooms for improvement.</p>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+        <div class="card-header">
+            <h3 class="card-title text-center">Secretary</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">Helping Hand Cleaning Services Edinburgh, Edinburgh | Oct 2016 - May 2017</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">secretary helping hand cleaning services edinburgh 2016 2017</h5>
+          
+          <ul class="nav nav-pills card-header-pills nav-justified" id="bologna-list" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" href="#HH1" role="tab" aria-controls="Social Media Management" aria-selected="true">Social Media Management</a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="card-body">   
+           <div class="tab-content">
+            <div class="tab-pane active" id="HH1" role="tabpanel" aria-labelledby="Social Media Management">
+              <p class="card-text">Managed company Facebook account.</p>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
      </div>    
-</div>
 </div>
 
 <script>
@@ -261,7 +220,7 @@ $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 });
 </script>
 
-      </section>      
+      </section>     
       
       <section id="map" class="ppp-bg-two">
   <div class="container h-100">
@@ -280,25 +239,24 @@ $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
       
       
 <footer>  
-      <nav class="navbar px-5 navbar-expand-sm bottom navbar-dark bg-dark shadow">
-          <span class="text-white">© <script>document.write( new Date().getFullYear() );</script> Perry Liu</span>
+      <nav class="navbar px-5 navbar-expand-sm bottom navbar-dark" style="background-color: rgba(0,0,0,1)">
+          <span class="text-white">© Perry Liu 2019 - <script>document.write( new Date().getFullYear() );</script></span>
       
       <!-- Right Nav -->
+<!--
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-        <a class="nav-link" href="privacy-policy">Privacy Policy</a>
-      </li>
      
      
     </ul>
+-->
 </nav>
 </footer>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="assets/js/one.js"></script>
+    <script src="assets/js/filter.js"></script>
   </body>
 </html>

@@ -33,9 +33,9 @@
 
       
   </head>
-  <body>
-      <nav class="navbar px-5 navbar-expand-sm fixed-top navbar-dark bg-dark shadow">
-  <a class="navbar-brand" href="/">Perry Liu</a>
+  <body class="ppp-bg-grid">
+      <nav class="navbar px-5 navbar-expand-sm fixed-top navbar-dark" style="background-color:rgba(0,0,0,0.85)">
+  <a class="navbar-brand" href="/"><img src="assets/img/perry.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""> Perry Liu</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -45,7 +45,7 @@
       <!-- Right Nav -->
       <ul class="navbar-nav ml-auto">
     <li class="nav-item">
-        <a class="nav-link" href="/assets/Perry%20CV%202020.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a>
+        <a class="nav-link" href="/assets/perry%20cv.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/perryliuofficial?tab=repositories" target=”_blank”><i class="fab fa-github"></i> Repo</a>
@@ -62,7 +62,7 @@
   
 
 <!-- Page Content -->
-<section class="py-5 px-1" id="About">
+<section class="pt-5 px-1" id="About">
     <h1 class="text-primary text-center pt-5">I am a <strong>Web Developer</strong></h1>
     
 <h6 class="text-dark text-center lead"><strong>Front-end:</strong> HTML, CSS, Bootstrap etc</h6>
@@ -71,73 +71,156 @@
     
 </section>
       
-<section class="pb-5">
-<div class="container p-0">
-  <div class="row mx-0">
-    <div class="col-sm-12 mb-3">
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by website name or year...">
+<section class="py-5 container">
+<div class="w-100 px-0">
+    <div class="mb-3">
+      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by name or year...">
     </div>
       
-</div>
-<div class="row mx-0" id="myItems">
-    
-    
-<div class="card-columns mt-3">
-    
-        <div class="card shadow-sm">
-    <img src="assets/img/web-dev/web-dev-3.jpg" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title"><strong>Edinburgh ProgSoc</strong> <span class="lead text-muted">2020</span></h5>
-      <p class="card-text">Co-developer of Programming Society page <span class="badge badge-dark">Bootstrap 4</span></p>
-        <a class="btn btn-outline-primary btn-sm disabled" href="/" target="_blank" role="button">Coming Soon</a>
-    </div></div>
 
-    <div class="card shadow-sm">
-    <img src="assets/img/web-dev/web-dev-4.PNG" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title"><strong>Final Grade Calculator</strong> <span class="lead text-muted">2020</span></h5>
-      <p class="card-text">See what you need in your final exam to pass the year! <span class="badge badge-dark">Bootstrap 4</span></p>
+<div id="myItems">
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+        <div class="row mx-0 no-gutters">
+        <div class="col-md-4">
+            <img class="h-100 w-100 rounded" src="assets/img/web-dev/web-dev-3.PNG" style="object-fit: cover;">
+        </div>
+            
+        <div class="col-md-8">
+        <div class="card-header">
+            <h3 class="card-title text-center">Edinburgh Programming Society</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">Jan 2020 - Present</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">edinburgh progsoc programming society 2020</h5>
+
+        </div>
         
-        <a class="btn btn-outline-primary btn-sm" href="https://www.perryliu.co.uk/final-grade-calculator/" target="_blank" role="button">Visit Site</a>
+    
+        <div class="card-body">   
+
+              <p class="card-text"><a href="/" target="_blank" class="disabled btn btn-dark">Coming Soon</a> Co-developer of society page.</p>
+            </div>
+             
+<!--
+            <div class="tab-pane" id="PS2" role="tabpanel" aria-labelledby="Technical Info">  
+              <p class="card-text">Bootstrap 4 with pre-made theme &amp; custom JS.</p>
+            </div>
+-->
+             
+          </div>
+        </div>
+        </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+        <div class="row mx-0 no-gutters">
+        <div class="col-md-4">
+            <img class="h-100 w-100 rounded" src="assets/img/web-dev/web-dev-4.PNG" style="object-fit: cover;">
+        </div>
+            
+        <div class="col-md-8">
+        <div class="card-header">
+            <h3 class="card-title text-center">Final Grade Calculator</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">Feb 2020 - Mar 2020</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">final grade calculator 2020</h5>
+          
+        </div>
+        
+    
+        <div class="card-body">   
+
+              <p class="card-text">Calculates the grade you need to achieve in your final in order to reach your desired average final grade.<br><br><a href="https://www.perryliu.co.uk/final-grade-calculator/" target="_blank" class="btn btn-dark btn-sm">Visit Site</a></p>
+             
+
+        </div>
+        </div>
     </div>
-  </div>
-
-
-
-  <div class="card shadow-sm">
-    <img src="assets/img/web-dev/web-dev-1.PNG" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title"><strong>Uni: Entrepreneur</strong> <span class="lead text-muted">2020</span><span class="d-none">Edinburgh</span></h5>
-      <p class="card-text">Product page for uni entrepreneur course <span class="badge badge-dark">Bootstrap 4</span></p>
-        <a class="btn btn-outline-primary btn-sm" href="https://www.perryliu.co.uk/UoE-entrepreneur-course/" target="_blank" role="button">Visit Site</a>
-    </div></div>
-
-
-        <div class="card shadow-sm">
-    <img src="assets/img/web-dev/web-dev-2.PNG" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title"><strong>Uni: Interactive Retail</strong> <span class="lead text-muted">2020</span><span class="d-none">Edinburgh</span></h5>
-      <p class="card-text">Store page for uni interactive retail course <span class="badge badge-dark">Bootstrap 4</span></p>
-        <a class="btn btn-outline-primary btn-sm" href="https://www.perryliu.co.uk/UoE-retail-course/" target="_blank" role="button">Visit Site</a>
-    </div></div>
+      </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+        <div class="row mx-0 no-gutters">
+        <div class="col-md-4">
+            <img class="h-100 w-100 rounded" src="assets/img/web-dev/web-dev-1.PNG" style="object-fit: cover;">
+        </div>
+            
+        <div class="col-md-8">
+        <div class="card-header">
+            <h3 class="card-title text-center">Uni Entrepreneur Course</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">Feb 2020 - Mar 2020</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">uni uoe edinburgh university 2020 vantage point entrepreneur course</h5>
+          
+        </div>
+        
     
+        <div class="card-body">   
 
-  <div class="card shadow-sm">
-    <img src="assets/img/web-dev/web-dev-0.PNG" class="card-img-top" alt="">
-    <div class="card-body">
-        <h5 class="card-title"><strong>This Site</strong> <span class="lead text-muted">2019-Present</span><span class="d-none">Perry Liu 2020</span></h5>
-      <p class="card-text">Personal CV &amp; Portfolio Site <span class="badge badge-dark">Bootstrap 4</span></p>
-        <a class="btn btn-outline-primary btn-sm" href="https://www.perryliu.co.uk/" target="_blank" role="button">Visit Site</a>
+              <p class="card-text">Website for entrepreneur course product.<br><br><a href="https://www.perryliu.co.uk/UoE-entrepreneur-course" target="_blank" class="btn btn-dark btn-sm">Visit Site</a></p>
+             
+
+        </div>
+        </div>
     </div>
-  </div>
-</div>
+      </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+        <div class="row mx-0 no-gutters">
+        <div class="col-md-4">
+            <img class="h-100 w-100 rounded" src="assets/img/web-dev/web-dev-2.PNG" style="object-fit: cover;">
+        </div>
+            
+        <div class="col-md-8">
+        <div class="card-header">
+            <h3 class="card-title text-center">Uni Retail Course</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">Feb 2020 - Mar 2020</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">uni uoe edinburgh university 2020 interactive retail course</h5>
+          
+        </div>
+        
     
+        <div class="card-body">   
+
+              <p class="card-text">Website for retail course.<br><br><a href="https://www.perryliu.co.uk/UoE-retail-course/" target="_blank" class="btn btn-dark btn-sm">Visit Site</a></p>
+             
+
+        </div>
+        </div>
+    </div>
+      </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="card mb-3 shadow">
+        <div class="row mx-0 no-gutters">
+        <div class="col-md-4">
+            <img class="h-100 w-100 rounded" src="assets/img/web-dev/web-dev-0.PNG" style="object-fit: cover;">
+        </div>
+            
+        <div class="col-md-8">
+        <div class="card-header">
+            <h3 class="card-title text-center">perryliu.co.uk</h3>
+            <h6 class="card-subtitle mb-2 text-muted text-center">Dec 2019 - Present</h6>
+            <!--d-none for search term-->
+            <h5 class="search-title d-none">perry liu perryliu this 2019 2020</h5>
+          
+        </div>
+        
     
-    
-    
+        <div class="card-body">   
+
+              <p class="card-text">You are here.<br><br><a href="/" target="_blank" class="btn btn-dark btn-sm">Visit Site</a></p>
+             
+
+        </div>
+        </div>
+    </div>
+      </div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
      </div>    
-    </div>
-
+</div>
 
 <script>
 $(document).ready(function(){
@@ -150,7 +233,7 @@ $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 });
 </script>
 
-      </section>      
+      </section>    
       
       
       
@@ -173,25 +256,24 @@ $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
 
       
 <footer>  
-      <nav class="navbar px-5 navbar-expand-sm bottom navbar-dark bg-dark shadow">
-          <span class="text-white">© <script>document.write( new Date().getFullYear() );</script> Perry Liu</span>
+      <nav class="navbar px-5 navbar-expand-sm bottom navbar-dark" style="background-color: rgba(0,0,0,1)">
+          <span class="text-white">© Perry Liu 2019 - <script>document.write( new Date().getFullYear() );</script></span>
       
       <!-- Right Nav -->
+<!--
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-        <a class="nav-link" href="privacy-policy">Privacy Policy</a>
-      </li>
      
      
     </ul>
+-->
 </nav>
 </footer>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="assets/js/one.js"></script>
+    <script src="assets/js/filter.js"></script>
   </body>
 </html>
