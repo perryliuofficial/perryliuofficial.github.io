@@ -1,63 +1,25 @@
-//Typing Carousel
-function playAudio() {
-  var sound = document.getElementById('audio');
-  sound.play();
-};
+$( ".ppp-img-hover a" ).hover(function() {
+  var URI = $(this).attr('id');
+    if (URI == "1") {document.getElementById('ppp-img').src='assets/img/landing/1.jpg'}
+    else if (URI == "2") {document.getElementById('ppp-img').src='assets/img/landing/2.jpg'}
+    else if (URI == "3") {document.getElementById('ppp-img').src='assets/img/landing/3.jpg'}
+    else if (URI == "4") {document.getElementById('ppp-img').src='assets/img/landing/4.jpg'}
+    else if (URI == "5") {document.getElementById('ppp-img').src='assets/img/landing/5.jpg'}
+  
+});
 
-function pauseAudio() {
-  var sound = document.getElementById('audio');
-  sound.pause();
-}
+$( ".ppp-img-hover" ).mouseleave(function() {
+    document.getElementById('ppp-img').src='assets/img/landing/perry.jpg'
+});
 
-var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
 
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 45 // 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-
-};
+//// When any of the a's inside of sidebarContainer are hovered
+//$( ".sidebarContainer a" ).hover(function() {
+//  // Removes all previous classes but keeps sidebar1
+//  $('.sidebar1').removeClass().addClass('sidebar1');
+//  // Splits up the URL on the current href
+//  var URI = $(this).attr('href').split('/');
+//  console.log(URI[2]);
+//  // Applies the last part of the URL to sidebar1 
+//  $('.sidebar1').addClass(URI[2]);
+//});
