@@ -61,12 +61,52 @@
 
 <div id="myBtnContainer" class="mb-4 text-center">
 <button class="btn btn-primary mb-1 active" onclick="filterSelection('all')"> Show All</button>
-<button class="btn btn-primary mb-1" onclick="filterSelection('GMS')" disabled> Gamemaker Studio</button>
-<button class="btn btn-primary mb-1" onclick="filterSelection('UnityEngine')" disabled> Unity Engine</button>
 <button class="btn btn-primary mb-1" onclick="filterSelection('UnrealEngine')" disabled> Unreal Engine</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('UnityEngine')"> Unity Engine</button>
+<button class="btn btn-primary mb-1" onclick="filterSelection('GMS')"> GameMaker Studio</button>
 </div>
 
 <div class="row">
+<!--/////////////////////////////////////////////////////////////////////////////-->
+<div class="col-12 col-md-6 filterDiv UnityEngine">
+<div class="card mb-4 shadow">
+<a data-target="#modal2" data-toggle="modal" href="#" class="h-100 w-100 img-hover-zoom">
+<picture>
+  <source type="image/webp" srcset="assets/img/game-dev/game-dev-2.webp">
+  <source type="image/png" srcset="assets/img/game-dev/game-dev-2.PNG">
+  <img src="assets/img/game-dev/game-dev-1.PNG" class="card-img-top rounded ppp-img-blur" alt="" loading="lazy">
+</picture>
+</a>
+<span class="ppp-pos-top">
+<p class="text-white ppp-tsd-dark font-weight-bold h5 mx-2 mb-0">Bullet Maze (Nekomatata Game Jam #150)</p>
+<p class="text-white ppp-tsd-dark mx-2 mb-0">Coming Soon</p>
+</span>
+<span class="ppp-pos-bottom mx-2 ppp-tsd-dark text-white">
+<!--<p class="text-white ppp-tsd-dark mx-2 mb-0">Co-developer of society page.</p>-->
+<i class="fas fa-search-plus"></i> Arcade Maze <i class="fab fa-windows"></i> | <i class="fab fa-html5"></i> <i class="fab fa-chrome"></i> <i class="fab fa-safari"></i> <i class="fab fa-firefox-browser"></i>
+</span>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modal2" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-body mb-0 p-0">
+<picture>
+  <source type="image/webp" srcset="assets/img/game-dev/game-dev-2.webp">
+  <source type="image/png" srcset="assets/img/game-dev/game-dev-2.PNG">
+  <img src="assets/img/game-dev/game-dev-1.PNG" class="card-img-top" alt="" loading="lazy">
+</picture>
+<div class="card-body">   
+<p class="card-text text-justify"><a href="https://perryliuofficial.itch.io/apocalypse-royale" target="_blank" class="btn btn-dark btn-sm disabled"><i class="fab fa-itch-io"></i> Play in Browser</a> <a href="https://github.com/perryliuofficial/Bullet-Maze-Game-Jam" target="_blank" class="btn btn-dark btn-sm disabled"><i class="fab fa-github"></i> Source Code</a><br>Game Jam Theme: You're the Enemy. Play as a legally distinct pellet-eating ghostbuster who is definitely not Pac-Man, where the pellets are your bullets. Turns out not-Pac-Man is kind of a dick towards ghosts.</p>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!--/////////////////////////////////////////////////////////////////////////////-->
 <!--/////////////////////////////////////////////////////////////////////////////-->
 <div class="col-12 col-md-6 filterDiv GMS">
 <div class="card mb-4 shadow">
@@ -94,7 +134,7 @@
 <picture>
   <source type="image/webp" srcset="assets/img/game-dev/game-dev-1.webp">
   <source type="image/png" srcset="assets/img/game-dev/game-dev-1.PNG">
-  <img src="assets/img/game-dev/game-dev-1.PNG" class="card-img-top ppp-img-blur" alt="" loading="lazy">
+  <img src="assets/img/game-dev/game-dev-1.PNG" class="card-img-top" alt="" loading="lazy">
 </picture>
 <div class="card-body">   
 <p class="card-text text-justify"><a href="https://perryliuofficial.itch.io/apocalypse-royale" target="_blank" class="btn btn-dark btn-sm"><i class="fab fa-itch-io"></i> Download Game</a> <a href="https://github.com/perryliuofficial/Apocalypse-Royale" target="_blank" class="btn btn-dark btn-sm"><i class="fab fa-github"></i> Source Code</a><br>The zombie apocalypse is here and the only one willing to pay for a rescue mission is a TV executive. Handle supply drops, nudge survivors, and manage the filming of this survival battle royale. Remember: only one survivor gets to be airlifted out. Inspired by Yahtzee Croshaw's BRTV.</p>
