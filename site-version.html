@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Perry Liu | Site Version</title>
+    <title>Perry Liu | Portfolio Site</title>
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:type" content="website">
     <meta name="description" content="Perry Liu's personal CV and portfolio site, featuring web dev showcases, Excel spreadsheets, 3D renders, game source code etc.">
@@ -14,115 +14,172 @@
     <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Custom CSS --> 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Font Awesome -->
-    <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet">
-      
-  </head>
-  <body class="ppp-bg-grid">
-      <nav class="navbar px-5 navbar-expand-sm fixed-top navbar-dark" style="background-color:rgba(0,0,0,0.85)">
-  <a class="navbar-brand" href="/"><picture><source type="image/webp" srcset="assets/img/landing/perry.webp"><source type="image/jpeg" srcset="assets/img/landing/perry.jpg"><img src="assets/img/landing/perry.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" loading="lazy" alt=""></picture> Perry Liu</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-      <!-- Right Nav -->
-      <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-        <a class="nav-link" href="/assets/Perry%20CV.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://github.com/perryliuofficial" target=”_blank”><i class="fab fa-github"></i> GitHub</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="https://www.linkedin.com/in/perryliuofficial/" target=”_blank”><i class="fab fa-linkedin"></i> LinkedIn</a>
-      </li>
-     
-     
-    </ul>
-
-  </div>
-</nav>
-      
-
-<!-- Page Content -->
-<section style="min-height: 100%;">
-<div class="pt-5 px-1" id="About">
-    <h1 class="text-primary text-center pt-5">Site Version History</h1>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS--> 
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <!-- <nav role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="/" class="brand-logo" style="height: 100%;"><picture><source type="image/webp" srcset="assets/img/landing/perry.webp"><source type="image/jpeg" srcset="assets/img/landing/perry.jpg"><img src="assets/img/landing/perry.jpg" style="position:relative; top:1px;height: 50%;" class="circle" loading="lazy" alt=""></picture> Perry Liu</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/assets/Perry%20CV.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a></li>
+            <li><a href="https://github.com/perryliuofficial" target=”_blank”><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/perryliuofficial" target=”_blank”><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="/assets/Perry%20CV.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a></li>
+            <li><a href="https://github.com/perryliuofficial" target=”_blank”><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/perryliuofficial" target=”_blank”><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav> -->
+    <div class="navbar-fixed">
+    <nav class="grey darken-3">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="/" class="brand-logo" style="height: 100%;"><picture><source type="image/webp" srcset="assets/img/landing/perry.webp"><source type="image/jpeg" srcset="assets/img/landing/perry.jpg"><img src="assets/img/landing/perry.jpg" style="position:relative; top:1px;height: 50%;" class="circle" loading="lazy" alt=""></picture> Perry Liu</a>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/assets/Perry%20CV.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a></li>
+            <li><a href="https://github.com/perryliuofficial" target=”_blank”><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/perryliuofficial" target=”_blank”><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     
-</div>
-      
-<div class="py-5 container">
+      <ul class="sidenav" id="nav-mobile">
+        <li><a href="/assets/Perry%20CV.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a></li>
+        <li><a href="https://github.com/perryliuofficial" target=”_blank”><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/perryliuofficial" target=”_blank”><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      </ul>
+             
 
-<!--
-<div id="myBtnContainer" class="mb-4 text-center">
-<button class="btn btn-primary mb-1 active" onclick="filterSelection('all')"> Show All</button>
-<button class="btn btn-primary mb-1" onclick="filterSelection('Bootstrap')"> Bootstrap</button>
-<button class="btn btn-primary mb-1" disabled onclick="filterSelection('PHP')"> PHP</button>
-</div>
--->
+    <section class="section">
+        <a class="mb-10 btn grey darken-3 dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Toggle Dark Mode</a>
+        <div class="row container">
+            <div class="col s12">
+            <h1 class="light-blue-text">Site Version</h1>
+            <h5 class="grey-text text-darken-3">Various iterations of this site.</h5>
+            </div>
+        </div>
+    </section>
 
-<div class="row">
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="col-12 col-md-6 filterDiv Bootstrap">
-<div class="card mb-4 shadow img-hover-zoom">
-<img class="h-100 w-100 rounded ppp-img-dark" src="assets/img/site-version/site-version-2.PNG" loading="lazy">
-<span class="ppp-pos-top">
-<p class="text-white ppp-tsd-dark font-weight-bold h5 mx-2 mb-0">www.perryliu.co.uk</p>
-<p class="text-white ppp-tsd-dark mx-2 mb-0">May 2020 - Present</p>
-</span>
-<span class="ppp-pos-bottom">
-<!--<p class="text-white ppp-tsd-dark mx-2 mb-0">Co-developer of society page.</p>-->
-<a href="https://www.perryliu.co.uk/" target="_blank" class="btn btn-primary btn-sm mx-2 mb-0">Visit Site</a>
-</span>
-</div>
-</div>
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<!--/////////////////////////////////////////////////////////////////////////////-->
-<div class="col-12 col-md-6 filterDiv Bootstrap">
-<div class="card mb-4 shadow img-hover-zoom">
-<img class="h-100 w-100 rounded" src="assets/img/site-version/site-version-1.jpg" loading="lazy">
-<span class="ppp-pos-top">
-<p class="text-white ppp-tsd-dark font-weight-bold h5 mx-2 mb-0">v1.perryliu.co.uk</p>
-<p class="text-white ppp-tsd-dark mx-2 mb-0">Dec 2019 - May 2020</p>
-</span>
-<span class="ppp-pos-bottom">
-<!--<p class="text-white ppp-tsd-dark mx-2 mb-0">Calculates your course average.</p>-->
-<a href="https://v1.perryliu.co.uk/" target="_blank" rel="noopener" class="btn btn-primary btn-sm mx-2 mb-0">Visit Site</a>
-</span>
-</div>
-</div>
-<!--/////////////////////////////////////////////////////////////////////////////-->
-</div>    
 
+     
+
+
+
+
+    <section class="section" style="min-height: 100%;">
+      <div class="row container card-deck" id = "deck-start">
+
+
+
+
+<!---------------------------------------------------------------------------------------------------------->
+      <div class="col s12 m6 l6">
+        <div class="card medium hoverable">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/img/android-chrome-512x512.png" loading="lazy">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator">perryliu.co.uk<i class="material-icons right">more_vert</i></span>
+              <p>Sep 2020 - Present</p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title">perryliu.co.uk<i class="material-icons right">close</i></span>
+              <p>Firebase integration, and replaced Bootstrap.css with Materialize.css.</p>
+              <p><a href="https://www.perryliu.co.uk" target="_blank">Visit Site</a></p>
+            </div>
+          </div>
+    </div>
+  <!---------------------------------------------------------------------------------------------------------->
+  <div class="col s12 m6 l6">
+    <div class="card medium hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="https://files.perryliu.co.uk/assets/img/Personal%20Site/site-version/site-version-2.PNG" loading="lazy">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator">v2.perryliu.co.uk<i class="material-icons right">more_vert</i></span>
+          <p>May 2020 - Sep 2020</p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title">v2.perryliu.co.uk<i class="material-icons right">close</i></span>
+          <p>Redesigned for better browsing experience.</p>
+          <p><a href="https://v2.perryliu.co.uk" target="_blank">Visit Site</a></p>
+        </div>
+      </div>
+</div>
+<!---------------------------------------------------------------------------------------------------------->
+<div class="col s12 m6 l6">
+  <div class="card medium hoverable">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="https://files.perryliu.co.uk/assets/img/Personal%20Site/site-version/site-version-1.jpg" loading="lazy">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator">v1.perryliu.co.uk<i class="material-icons right">more_vert</i></span>
+        <p>Dec 2019 - May 2020</p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title">v1.perryliu.co.uk<i class="material-icons right">close</i></span>
+        <p>A Bootstrap static site.</p>
+        <p><a href="https://v1.perryliu.co.uk" target="_blank">Visit Site</a></p>
+      </div>
+    </div>
 </div>
 
-</section>    
-      
 
-      
-<footer class="pt-4 text-center text-white" style="background-color: black">
 
-  <div>
-Using an unsupported browser? Try the <a href="site-version" target="_blank">old site</a>.
+
+
+
 
   </div>
+    </section>
+</main>
 
-  <div class="py-3">© Perry Liu 2019 - <script>document.write( new Date().getFullYear() );</script>
-  </div>
+    <section class="section"></section>
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">About Me</h5>
+              <p class="grey-text text-lighten-4">Internal Communications Consultant @ Vodafone Group. Web and game development hobbyist, along with the occasional 3D modelling and vector art drawings.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">My Other Stuff</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://github.com/ediprogsoc/ediprogsoc.github.io" target="_blank">EdiProgSoc</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!" disabled>TBC</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!" disabled>TBC</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!" disabled>TBC</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © Perry Liu 2019 - <script>document.write( new Date().getFullYear() );</script>
+          <a class="grey-text text-lighten-4 right" href="site-version" target="_blank">Site Version 3.0</a>
+          </div>
+        </div>
+      </footer>
 
-</footer>
+
+
       
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- JavaScript -->
+    <script src="https://kit.fontawesome.com/77202afacb.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script> -->
+</body>
 </html>

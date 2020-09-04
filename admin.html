@@ -45,18 +45,42 @@
           <a id="logo-container" href="/" class="brand-logo" style="height: 100%;"><picture><source type="image/webp" srcset="assets/img/landing/perry.webp"><source type="image/jpeg" srcset="assets/img/landing/perry.jpg"><img src="assets/img/landing/perry.jpg" style="position:relative; top:1px;height: 50%;" class="circle" loading="lazy" alt=""></picture> Perry Liu</a>
           <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="/assets/Perry%20CV.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a></li>
-            <li><a href="https://github.com/perryliuofficial" target=”_blank”><i class="fab fa-github"></i> GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/perryliuofficial" target=”_blank”><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li class="logged-in" style="display: none;">
+              <a href="#" class=" modal-trigger" data-target="modal-account">Account</a>
+            </li>
+            <li class="logged-in" style="display: none;">
+              <a href="#" class="" id="logout">Logout</a>
+            </li>
+            <li class="logged-in" style="display: none;">
+              <a href="#" class=" modal-trigger" data-target="modal-create">Create Guide</a>
+            </li>
+            <li class="logged-out" style="display: none;">
+              <a href="#" class=" modal-trigger" data-target="modal-login">Login</a>
+            </li>
+            <li class="logged-out" style="display: none;">
+              <a href="#" class=" modal-trigger" data-target="modal-signup">Sign up</a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
     
       <ul class="sidenav" id="nav-mobile">
-        <li><a href="/assets/Perry%20CV.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a></li>
-        <li><a href="https://github.com/perryliuofficial" target=”_blank”><i class="fab fa-github"></i> GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/perryliuofficial" target=”_blank”><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li class="logged-in">
+          <a href="#" class=" modal-trigger" data-target="modal-account">Account</a>
+        </li>
+        <li class="logged-in">
+          <a href="#" class="" id="logout">Logout</a>
+        </li>
+        <li class="logged-in">
+          <a href="#" class=" modal-trigger" data-target="modal-create">Create Guide</a>
+        </li>
+        <li class="logged-out">
+          <a href="#" class=" modal-trigger" data-target="modal-login">Login</a>
+        </li>
+        <li class="logged-out">
+          <a href="#" class=" modal-trigger" data-target="modal-signup">Sign up</a>
+        </li>
       </ul>
              
 
@@ -64,8 +88,8 @@
         <a class="mb-10 btn grey darken-3 dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Toggle Dark Mode</a>
         <div class="row container">
             <div class="col s12">
-            <h1 class="light-blue-text">Hi! I'm Perry.</h1>
-            <h5 class="grey-text text-darken-3">You can find some of my work below.</h5>
+            <h1 class="light-blue-text">Personal Admin Portal</h1>
+            <h5 class="grey-text text-darken-3">You're in the wrong place :P</h5>
             </div>
         </div>
     </section>
@@ -77,33 +101,106 @@
 
 
     <section class="section" style="min-height: 100%;">
-        <div class="row container" id="myBtnContainer">
-            <div class="col s12">
-            <!-- <a class="mb-10 btn grey darken-3 dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Toggle Dark Mode</a> -->
-            <button class="mb-10 btn waves-effect waves-light light-blue active" onclick="filterSelection('all')"> Show All</button>
-            <button class="mb-10 btn waves-effect waves-light light-blue" onclick="filterSelection('work')"><i class="fas fa-briefcase"></i> Work Experience</button>
-            <button class="mb-10 btn waves-effect waves-light light-blue" onclick="filterSelection('admin')"><i class="fas fa-file-excel"></i> Business Admin</button>
-            <button class="mb-10 btn waves-effect waves-light light-blue" onclick="filterSelection('mkt')"><i class="fas fa-chart-bar"></i> Digital Marketing</button>
-            <button class="mb-10 btn waves-effect waves-light light-blue" onclick="filterSelection('art')"><i class="fas fa-paint-brush"></i> Digital Art</button>
-            <button class="mb-10 btn waves-effect waves-light light-blue" onclick="filterSelection('web')"><i class="fas fa-laptop-code"></i> Web Dev</button>
-            <button class="mb-10 btn waves-effect waves-light light-blue" onclick="filterSelection('game')"><i class="fas fa-gamepad"></i> Game Dev</button>
-            </div>
+        <!-- SIGN UP MODAL -->
+  <div id="modal-signup" class="modal">
+    <div class="modal-content">
+      <h4>Sign up</h4><br />
+      <form id="signup-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Email address</label>
         </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Choose password</label>
+        </div>
+        <button class="btn waves-effect waves-light light-blue">Sign up</button>
+      </form>
+    </div>
+  </div>
 
+  <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Your password</label>
+        </div>
+        <button class="btn waves-effect waves-light light-blue">Login</button>
+      </form>
+    </div>
+  </div>
 
+  <!-- ACCOUNT MODAL -->
+  <div id="modal-account" class="modal">
+    <div class="modal-content center-align">
+      <h4>Account details</h4><br />
+      <div class="account-details"></div>
+      <div class="account-extras"></div>
+    </div>
+  </div>
 
+  <!-- CREATE GUIDE MODAL -->
+  <div id="modal-create" class="modal">
+    <div class="modal-content">
+      <h4>Create Guide</h4><br />
+      <form id="create-form" class="row">
+        <div class="input-field col s3">
+          <input type="text" id="title" required>
+          <label for="title">Guide Title</label>
+        </div>
+        <div class="input-field col s3">
+          <input type="text" id="category" required>
+          <label for="category">Category</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="date_start" type="text" class="datepicker" required>
+          <label for="start_date">Start Date</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="date_end" type="text" class="datepicker" required>
+          <label for="end_date">End Date</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="content_short" class="materialize-textarea" required></textarea>
+          <label for="content_short">Content (short)</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="content_long" class="materialize-textarea" required></textarea>
+          <label for="content_long">Content (full)</label>
+        </div>
+        <div class="input-field col s4">
+          <input type="text" id="PNG" required>
+          <label for="content_full">PNG</label>
+        </div>
+        <div class="input-field col s4">
+          <input type="text" id="WebP" required>
+          <label for="content_full">WebP</label>
+        </div>
+        <div class="input-field col s4">
+          <input type="text" id="AVIF" required>
+          <label for="content_full">AVIF</label>
+        </div>
+          <div class="col s4 input-field"><input type="text" id="tag1" required><label for="tag">Tag</label></div>
+          <div class="col s4 input-field"><input type="text" id="tag2" required><label for="tag">Tag</label></div>
+          <div class="col s4 input-field"><input type="text" id="tag3" required><label for="tag">Tag</label></div>
 
-          <!-- PORTFOLIO LIST -->
-          <div class="row container card-deck" id = "deck-start">
-            <!--/////////////////////////////////////////////////////////////////////////////-->
-            <!--START EVENTS DECK-->
-            <!--/////////////////////////////////////////////////////////////////////////////-->
-            
-
-            <!--/////////////////////////////////////////////////////////////////////////////-->
-            <!--END EVENTS DECK-->
-            <!--/////////////////////////////////////////////////////////////////////////////-->
-          </div>
+          <div class="col s6 input-field"><input type="text" id="link1" required><label for="link">Link Title</label></div>
+          <div class="col s6 input-field"><input type="text" id="url1" required><label for="link">Link URL</label></div>
+          <div class="col s6 input-field"><input type="text" id="link2" required><label for="link">Link Title</label></div>
+          <div class="col s6 input-field"><input type="text" id="url2" required><label for="link">Link URL</label></div>
+          <div class="col s6 input-field"><input type="text" id="link3" required><label for="link">Link Title</label></div>
+          <div class="col s6 input-field"><input type="text" id="url3" required><label for="link">Link URL</label></div>
+        <button class="btn waves-effect waves-light light-blue">Create</button>
+      </form>
+    </div>
+  </div>
     </section>
 </main>
 
@@ -183,6 +280,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/auth.js"></script>
 </body>
 </html>
